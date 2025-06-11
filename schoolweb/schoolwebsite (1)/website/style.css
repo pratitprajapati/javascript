@@ -1,0 +1,141 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    color: #333; 
+}
+
+header {
+    background: #4CAF50; 
+    color: white; 
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+nav {
+    margin: 10px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+nav .dropdown {
+    display: none;
+    position: absolute;
+    background: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav ul li:hover .dropdown {
+    display: block;
+}
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+.dropdown {
+    display: none; 
+    position: absolute; 
+    background: #4CAF50; 
+    padding: 10px 0; 
+    z-index: 1000; 
+}
+
+nav ul li:hover .dropdown {
+    display: block; 
+}
+
+.dropdown li {
+    display: block; 
+    margin: 0;
+}
+
+.dropdown li a {
+    padding: 10px 20px; 
+    display: block; 
+}
+
+.dropdown li a:hover {
+    background: #45a049;
+}
+
+main {
+    padding: 20px; 
+    background: white; 
+    margin: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+form {
+    margin-top: 20px; 
+}
+
+form label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+form textarea {
+    resize: vertical; 
+}
+
+form input[type="submit"] {
+    background: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+}
+
+form input[type="submit"]:hover {
+    background: #45a049; 
+}
+footer {
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
+}
+
+
+
+.social-media a {
+    margin: 0 15px; 
+    display: inline-block; 
+    justify-content: center;
+}
+
+.social-media img {
+    width: 40px; 
+    height: 40px; 
+    transition: transform 0.3s; 
+    
+}
+

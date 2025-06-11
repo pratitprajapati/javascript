@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+    <header>
+        <h2>Settings</h2>
+        <p>Manage your preferences and account settings below.</p>
+    </header>
+
+    <section class="settings-container">
+        <div class="settings-card">
+            <h3>Account Settings</h3>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Create new account</a></li>
+                <li><a href="delete.html">Delete Account</a></li>
+            </ul>
+        </div>
+
+        <div class="settings-card">
+            <h3>Privacy Settings</h3>
+            <ul>
+                <li><a href="#" onclick="aler()">Enable Two Factor Authentication</a></li>
+                <li><a href="signup.html">Change Password</a></li>
+            </ul>
+        </div>
+
+        <div class="settings-card">
+            <h3>Notifications</h3>
+            <ul>
+                <li><a href="#" onclick="inf()">Email Notifications</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="settings-card">
+            <h3>Other Settings</h3>
+            <ul>
+                <li><a href="language.html">Language Preferences</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="feedback-form">
+            <h3>Give Us Your Feedback</h3>
+            <textarea placeholder="Enter your feedback..." rows="4"></textarea>
+            <button type="submit">Submit Feedback</button>
+        </div>
+    </section>
+<script>
+    function inf(){
+        alert("Email notifications are turned on");
+    }
+    function aler(){
+        alert("Two factor Authentication is turned on")
+    }
+</script>
+</body>
+</html>

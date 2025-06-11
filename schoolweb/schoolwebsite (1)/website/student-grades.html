@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            background-color:#4CAF50;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color:#4CAF50;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #4CAF50;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown li {
+            margin: 10px 0;
+        }
+
+        .dropdown a {
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color:#4CAF50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        td:hover {
+            background-color: #f1f1f1;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+        nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elite Victory School</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="mission.html">Our Mission</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="setting.html">Settings</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="students.html">Students</a>
+                    <ul class="dropdown">
+                        <li><a href="add-student.html">Add Student</a></li>
+                        <li><a href="fee.html">Payment</a></li>
+                        <li><a href="student-grades.html">Student Grades</a></li>
+                        <li><a href="assignment.html">Assignments</a></li>
+                        <li><a href="classes.html">Class</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="teachers.html">Teachers</a>
+                    <ul class="dropdown">
+                        <li><a href="view-teachers.html">View Teachers</a></li>
+                        <li><a href="teacher-schedule.html">Teacher Schedule</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                    <ul class="dropdown">
+                        <li><a href="contact-form.html">Contact Form</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Student Grades</h2>
+        
+        <section id="student-info">
+            <h3>Student Information</h3>
+            <p><strong>Name:</strong> Pratit Prajapati</p>
+            <p><strong>Roll No:</strong> 645</p>
+            <p><strong>Grade:</strong> 12</p>
+            <p><strong>Section:</strong> M-17</p>
+
+
+        </section>
+
+        <section id="grades">
+            <h3>Grades</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>First Term</th>
+                        <th>Second Term</th>
+                        <th>Third Term</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>A</td>
+                        <td>A</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Nepali</td>
+                        <td>B+</td>
+                        <td>A</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>A</td>
+                        <td>B+</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Physics</td>
+                        <td>B</td>
+                        <td>A</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Chemistry</td>
+                        <td>A</td>
+                        <td>A</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Computer</td>
+                        <td>A+</td>
+                        <td>A</td>
+                        <td>A+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
