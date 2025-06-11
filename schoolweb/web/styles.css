@@ -1,0 +1,82 @@
+/* Reset some default styles */
+body, h1, h2, p, label, input, textarea, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a basic font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Set a fixed width for the form */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background: #45a049; /* Darker green on hover */
+}
+
+/* Additional styles for the form */
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Make the form responsive on small screens */
+    }
+}
